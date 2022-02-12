@@ -1,0 +1,156 @@
+<html class=" chat-button" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#0C8487">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1,viewport-fit=cover">
+    <!--[if IE]><link rel="icon" href="../favicon.ico"><![endif]-->
+    <title>Capital Company</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/override.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta name="theme-color" content="#4DBA87">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="upluswss">
+  
+    <meta name="msapplication-TileColor" content="#000000">
+
+</head>
+
+<body>
+    <div class="front">
+        <!---->
+        <header class="flex flex-col">
+            <div class="wrap header flex"><a><img src="assets/img/acme-logo.png" alt="Acme" class="logo"></a>
+                <nav class="flex-grow-1">
+                    <ul class="flex flex-mid-align flex-grow-1">
+                        <li><a href="manage.html">Manage requests</a></li>
+                        <li><a href="dailyhealthcheck.html">Daily Health Check</a></li>
+                        <li><a href="vaccinationstatus.html">Update Vaccination Status</a></li>
+
+                        <li><a href="returntooffice.html">New ReturnToOffice Request</a></li>
+
+                    </ul>
+                </nav>
+                <!---->
+                <div class="login"><button id="login-button" class="launch-login">Log in</button>
+                    <div id="loginform" class="overlay flex flex-col hidden ">
+                        <form action="manage.html" method="get">
+                        <div class="field flex flex-col username"><select id="username" type="text">
+                                <option>rameshkumar@capital.com</option>
+                                
+                            </select><label for="username">Username</label></div>
+                        <div class="field flex flex-col password"><input id="password" value="213123123" type="password"><label
+                                for="password">Password</label></div>
+                        <!----><button type="submit" class="sign-in">Sign in</button>
+                        <!---->
+                        <!---->
+                        <!---->
+                    </form>
+                    </div>
+                </div>
+                <div class="menu"><button class="launch-menu">Menu</button>
+                    <div class="menu-overlay flex flex-col">
+                        <ul>
+                            <li><a>MyHealthChart</a></li>
+                            <li><a>Make an appointment</a></li>
+                            <li><a>Patients &amp; Visitors</a></li>
+                            <li><a>Refer a patient</a></li>
+                            <li><a class="launch-login-overlay">Log in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="flex flex-col">
+            <div class="flex flex-col">
+                <div class="wrap hero-wrap flex">
+                    <div class="flex flex-col">
+                        <h1 class="hero" style="letter-spacing: -3px; font-size: 75rem ;"> Your safety is priorty to us, <br> Return to workplace with confident  </h1><button class="more"> Learn more
+                        </button>
+                    </div>
+                </div>
+                <div class="wrap options primary-options">
+                    <section class="front-option">
+                        <div><img src="https://pegawss.firebaseapp.com/health_care/img/option-1.jpg" alt="Find nearest Vaccine Center" class="option"></div>
+                        <div class="details">
+                            <h2 class="option-header">On Premise doctor support</h2>
+                            <p>Consult inhouse doctor for any emergency at workplace</p>
+                            <a href="./offer.html">Schedule an appointment</a>
+                        </div>
+                    </section>
+                    <section class="front-option">
+                        <div><img src="https://pegawss.firebaseapp.com/health_care/img/option-2.jpg" alt="Make an appointment" class="option"></div>
+                        <div class="details">
+                            <h2 class="option-header">Daily Health update</h2>
+                            <p>Whether you are a new or existing patient, we are here to help you schedule an
+                                appointment.</p><a href="#">Learn more</a>
+                        </div>
+                    </section>
+                    <section class="front-option">
+                        <div><img src="https://pegasystems.github.io/uplus-wss/commercial_bank/img/option-1.jpg" alt="Services" class="option"></div>
+                        <div class="details">
+                            <h2 class="option-header">100% Sanitised Workplace</h2>
+                            <p>When you need care, explorer our services amd locations to meet your needs.</p><a
+                                href="./offer.html">See options</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="secondary-options">
+                <div class="banner" style="background-image: url(&quot;https://pegawss.firebaseapp.com/health_care/img/secondary-options.jpg&quot;);"></div>
+                <div class="wrap options">
+                    <section class="front-option contact-us">
+                        <h2 class="option-header">Capital COVID-19 updates</h2>
+                        <p>Read latest announcements from our CEO and management</p><a>Learn more</a>
+                    </section>
+                    <section class="front-option paperless">
+                        <h2 class="option-header">Employee stories</h2>
+                        <p>Every employee has a story to share. Share your story and inspire others</p><a>Learn more</a>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="">
+            <div class="wrap flex">
+                <nav>
+                    <div class="flex"><a>About us</a><a>Reviews</a><a>Privacy</a><a href="#"> Settings
+                        </a></div>
+                </nav>
+                <!---->
+                <p class="flex-align-r copyright">© 2020 Capital Company</p>
+            </div>
+        </footer>
+    </div>
+ <script>
+   $(document).ready(function(){
+
+  $("#login-button").click(function(){
+
+
+      if($("#loginform").hasClass("hidden"))
+      {
+        $("#loginform").removeClass("hidden");
+        $("#loginform").addClass("show");
+      }else{
+        $("#loginform").removeClass("show");
+        $("#loginform").addClass("hidden");
+
+      }
+
+
+   
+  });
+
+
+	
+});
+ </script>
+</body>
+
+</html>
