@@ -1,5 +1,5 @@
 ### Instructions :
-- Upload SafeReturn Jar first and then SWSS Jar
+- Plase import SafeReturn Jar first and then SWSS Jar
 
 
 ### Operators :
