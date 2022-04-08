@@ -1,5 +1,5 @@
 ### Instructions :
-- Plase import SafeReturn Jar first and then SWSS Jar
+- Please import SafeReturn Jar first and then SWSS Jar
 
 
 ### Operators :
